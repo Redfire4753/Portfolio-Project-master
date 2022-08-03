@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "(This is very personal skill use of Ben Lawton)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "Ben Lawton",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "node-sass": "^6.0.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
