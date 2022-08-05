@@ -16,7 +16,7 @@
             rel="stylesheet"
             href="node_modules/bootstrap-social/bootstrap-social.css"
         />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/characters.css" />
         <!-- endbuild -->
         <title>Ben Lawton's Vampire Survivors Personal Wiki Character Page</title>
     </head>
@@ -79,25 +79,51 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-2">
-                    <img id="antonio" src="img/Antonio.jpg">
+                    <img class="img-fluid" id="antonio" src="img/Antonio.jpg">
                 </div>
                 <div class="col">
-                    <img id="imelda" src="img/Imelda.jpg">
+                    <img class="img-fluid" id="imelda" src="img/Imelda.jpg">
                 </div>
                 <div class="col">
-                    <img id="pasqualina" src="img/Pasqualina.jpg">
+                    <img class="img-fluid" id="pasqualina" src="img/Pasqualina.jpg">
                 </div>
                 <div class="col">
-                    <img id="gennaro" src="img/Gennaro.jpg">
+                    <img class="img-fluid" id="gennaro" src="img/Gennaro.jpg">
                 </div>
                 <div class="col">
-                    <img id="arca" src="img/Arca.jpg">
+                    <img class="img-fluid" id="arca" src="img/Arca.jpg">
                 </div>
                 <div class="col">
-                    <img id="porta" src="img/Porta.jpg">
+                    <img class="img-fluid" id="porta" src="img/Porta.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div id="cardName" class="cardheader">
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li id="cardWeapon" class="list-group-item"></li>
+                            <li id="cardPassive" class="list-group-item"></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="backButton" class="btn btn-secondary"></button>
                 </div>
             </div>
         </div>
+        <!-- build:js js/main.js-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="module" src="js/scripts.js"></script>
+        <!-- endbuild -->
     </body>
 </html>

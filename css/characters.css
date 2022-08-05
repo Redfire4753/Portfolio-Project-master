@@ -2,7 +2,6 @@
     padding: 30px;
     margin: 0;
 }
-img {
-    height: auto;
-    width: 25%;
+.btn {
+    display: none;
 }
