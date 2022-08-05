@@ -1,2 +1,1 @@
-import data from "characters.json" assert {};
-console.log(data);
+const antonioBtn = document.querySelector("")
