@@ -16,7 +16,7 @@
             rel="stylesheet"
             href="node_modules/bootstrap-social/bootstrap-social.css"
         />
-        <link rel="stylesheet" href="css/characters.css" />
+        <link rel="stylesheet" href="css/styles.css" />
         <!-- endbuild -->
         <title>Ben Lawton's Vampire Survivors Personal Wiki Character Page</title>
     </head>
@@ -99,11 +99,9 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="card">
-                        <div id="cardName" class="cardheader">
-
-                        </div>
+                    <div id="card" class="card">
                         <ul class="list-group list-group-flush">
+                            <li id="cardName" class="list-group-item"></li>
                             <li id="cardWeapon" class="list-group-item"></li>
                             <li id="cardPassive" class="list-group-item"></li>
                           </ul>
@@ -111,8 +109,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col">
-                    <button id="backButton" class="btn btn-secondary"></button>
+                <div class="col d-flex justify-content-center">
+                    <button id="backButton" class="btn btn-danger">Go Back</button>
                 </div>
             </div>
         </div>

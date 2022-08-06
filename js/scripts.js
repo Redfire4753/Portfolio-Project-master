@@ -7,6 +7,10 @@ const portaBtn = document.querySelector("#porta");
 const nameText = document.querySelector("#cardName");
 const weaponText = document.querySelector("#cardWeapon");
 const passiveText = document.querySelector("#cardPassive");
+const cardBack = document.querySelector('#card');
+const backButton = document.querySelector('#backButton');
+
+
 
 const characters = [{name: "Antonio", weapon: "Whip", passive: "Gains 10% might per 10 levels(max 50%)"}, 
                     {name: "Imelda", weapon: "Magic Wand", passive: "Gains 10% growth every 5 levels(max 30%)"},
@@ -22,6 +26,7 @@ pasqualinaBtn.addEventListener("click",function(){loadCharacter(2)});
 gennaroBtn.addEventListener("click", function(){loadCharacter(3)});
 arcaBtn.addEventListener("click", function(){loadCharacter(4)});
 portaBtn.addEventListener("click", function(){loadCharacter(5)});
+backButton.addEventListener("click", resetCharacters);
 
 
 function loadCharacter(num) {
@@ -29,6 +34,9 @@ function loadCharacter(num) {
     nameText.textContent = `Name: ${characters[num].name}`;
     weaponText.textContent = `Starting Weapon: ${characters[num].weapon}`;
     passiveText.textContent = `Character Passive: ${characters[num].passive}`;
+    cardBack.style.display = "block";
+    backButton.style.display= "inline-block";
+
     
 }
 
@@ -41,4 +49,13 @@ function toggleImg(imgArray, on) {
             img.style.display = "none";
         }
     }
+}
+
+function resetCharacters() {
+    toggleImg([antonioBtn,imeldaBtn,pasqualinaBtn,gennaroBtn,arcaBtn,portaBtn], true);
+    nameText.textContent = "";
+    weaponText.textContent = "";
+    passiveText.textContent = "";
+    backButton.style.display = "none";
+    cardBack.style.display= "none";
 }

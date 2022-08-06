@@ -1,6 +1,7 @@
 .jumbotron {
     padding: 30px;
     margin: 0;
+    background: linear-gradient(45deg,rgba(28,17,24,255) 0%,rgba(29,17,21,255) 50%,rgba(132,32,22,255) 100%);
 }
 a > img {
     height: 150px;
@@ -8,4 +9,20 @@ a > img {
 }
 body > p {
     margin-bottom:15px;
+}
+body {
+    background-color: rgba(132,32,22,255);
+}
+a {
+    color: rgba(255,202,53,255);
+}
+.btn {
+    display: none;
+}
+.card {
+    display: none;
+}
+.list-group-item{
+    background-color: rgba(29,17,21,255);
+    color: rgba(255,202,53,255);
 }
