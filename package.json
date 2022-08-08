@@ -4,16 +4,23 @@
   "description": "(This is very personal skill use of Ben Lawton)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "lite": "lite-server",
-    "start": "npm run lite"
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "usemin": "usemin characters.html -d dist --htmlmin -o dist/characters.html && usemin weapons.html -d dist --htmlmin -o dist/weapons.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin img/* -o dist/img",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts"
   },
   "author": "Ben Lawton",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1",
     "copyfiles": "^2.2.0",
     "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
@@ -25,6 +32,7 @@
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "react": "^18.2.0"
   }
 }

@@ -1,0 +1,43 @@
+$color-dark: rgba(28,17,24,255);
+$color-mid: rgba(29,17,21,255);
+$color-light: rgba(132,32,22,255);
+$color-text: rgba(255,202,53,255);
+
+
+.jumbotron {
+    padding: 30px;
+    margin: 0;
+    background: linear-gradient(45deg,$color-dark 0%, $color-mid 50%, $color-light 100%);
+}
+a > img {
+    height: 150px;
+    width: 150px;
+}
+img {
+    margin: 10px;
+}
+body > p {
+    margin-bottom:15px;
+}
+body {
+    background-color: $color-light;
+}
+a {
+    color: $color-text;
+}
+.btn {
+    display: none;
+}
+.card {
+    display: none;
+}
+.list-group-item{
+    background-color: $color-mid;
+    color: $color-text;
+}
+a:hover {
+    color: $color-dark;
+}
+.navbar {
+    border: 1px solid $color-dark;
+}
